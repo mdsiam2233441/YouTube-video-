@@ -34,10 +34,10 @@ from pyrogram.errors import FloodWait, MessageNotModified, RPCError
 from pyrogram.types import InlineKeyboardButton as Btn, InlineKeyboardMarkup as Kb
 
 # ============================== CONFIG ==============================
-API_ID = int(os.getenv("API_ID", "0"))
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x}
+API_ID = int(os.getenv("API_ID", "24017397"))
+API_HASH = os.getenv("API_HASH", "0f2fe9bc1733e762a3ceef7c1372ce40")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "9105774355:AAHwwbRPr6i56ue0Gxs5XGNNoPxDVzkl9j0")
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "1686274364").replace(" ", "1686274364").split(",") if x}
 DATA = Path(os.getenv("DATA_DIR", "data"))
 TMP = Path(os.getenv("TMP_DIR", str(Path(tempfile.gettempdir()) / "ytdl")))
 THUMBS = DATA / "thumbs"
